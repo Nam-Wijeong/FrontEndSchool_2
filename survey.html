@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="survey.css" />
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset class="wrapper">
+        <header class="header">
+          <h1 class="title">나와 잘 맞는 회사는?</h1>
+          <p class="title__comment">
+            가고 싶은 회사에 대한 호감도를 조사합니다. 아이고 의미 없다~~
+          </p>
+        </header>
+        <fieldset class="survey">
+          <h4 class="question">
+            다음 문자 중에 왠지 마음에 드는 것을 하나 고르세요
+          </h4>
+          <div>
+            <input type="radio" name="select" id="selectOne" required />
+            <label for="selectOne">네</label>
+          </div>
+          <div>
+            <input type="radio" name="select" id="selectOne" />
+            <label for="selectOne">카</label>
+          </div>
+          <div>
+            <input type="radio" name="select" id="selectOne" />
+            <label for="selectOne">라</label>
+          </div>
+          <div>
+            <input type="radio" name="select" id="selectOne" />
+            <label for="selectOne">쿠</label>
+          </div>
+          <div>
+            <input type="radio" name="select" id="selectOne" />
+            <label for="selectOne">베</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="survey">
+          <h4 class="question">
+            친구와 문자를 합니다. 다음 중 어떤 메신저를 이용하시겠습니까? 모두
+            골라주세요.
+          </h4>
+          <div>
+            <input type="checkbox" name="check" id="checkOne" />
+            <label for="checkOne">카카오톡</label>
+          </div>
+          <div>
+            <input type="checkbox" name="check" id="checkOne" />
+            <label for="checkOne">라인</label>
+          </div>
+          <div>
+            <input type="checkbox" name="check" id="checkOne" />
+            <label for="checkOne">인스타그램 디엠</label>
+          </div>
+          <div>
+            <input type="checkbox" name="check" id="checkOne" />
+            <label for="checkOne">네이트온</label>
+          </div>
+          <div>
+            <input type="checkbox" name="check" id="checkOne" />
+            <label for="checkOne">버디버디</label>
+          </div>
+        </fieldset>
+
+        <section class="survey">
+          <h4 class="question">
+            면접에서 자신의 포부를 한 문장으로 얘기한다면?
+          </h4>
+          <label for="goal"></label>
+          <input
+            type="text"
+            name="reason"
+            id="goal"
+            placeholder="내 답변"
+            required
+          />
+        </section>
+
+        <fieldset class="survey">
+          <h4 class="question">
+            당신은 한 기업의 최종 면접을 앞두고 있습니다. 면접장에 들어가기
+            직전, 자기 자신에게 해주고 싶은 말은?
+          </h4>
+          <label for="myself"></label>
+          <input
+            type="text"
+            name="myself"
+            id="myself"
+            placeholder="내 답변"
+            required
+          />
+        </fieldset>
+
+        <fieldset class="survey">
+          <h4 class="question">
+            다음 중 기술 면접 때 듣고 싶은 질문이 아닌 것은?
+          </h4>
+          <select name="interview" id="interviewQuestion" required>
+            <option value="">선택</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JAVASCRIPT</option>
+          </select>
+        </fieldset>
+
+        <fieldset class="survey">
+          <h4 class="question">취업을 희망하는 날짜를 선택해주세요.</h4>
+          <label for="jobDate" class="jobdate">날짜</label>
+          <input type="date" name="jobDate" id="jobDate" required />
+        </fieldset>
+
+        <fieldset class="survey">
+          <h4 class="question">
+            업무를 시작하기에 가장 적당한 시간을 고르세요.
+          </h4>
+          <label for="workTime" class="workTime">시간</label>
+          <input type="time" name="workTime" id="workTime" required />
+        </fieldset>
+        <fieldset class="buttons">
+          <input type="submit" class="submit" />
+          <button class="reset">양식 지우기</button>
+        </fieldset>
+      </fieldset>
+    </form>
+  </body>
+</html>

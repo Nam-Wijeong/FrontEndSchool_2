@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <input type="text" />
+    <input type="tel" />
+    <input type="email" /> -->
+
+    <form action="">
+      <label for="myDevice"
+        >현재 사용하고 있는 스마트폰의 제조사를 선택해주세요</label
+      >
+      <!-- 속성과 값이 같을 경우에는 값을 생략해도 된다 (multiple) -->
+      <select name="device" id="myDevice" required>
+        <option value="">선택</option>
+        <option value="iphone">아이폰</option>
+        <option value="galaxy">갤럭시폰</option>
+        <option value="ㅜㅜ">LG폰</option>
+      </select>
+
+      <!-- datalist : 주로 이메일 입력 창 만들 때 직접입력 란  -->
+      <label for="solasystem">원하는 행성을 선택하세요 : </label>
+      <input type="text" id="solasystem" list="planets" name="planets" />
+      <datalist id="planets">
+        <option value="수성">수성</option>
+        <option value="금성">금성</option>
+        <option value="지구">지구</option>
+        <option value="화성">화성</option>
+      </datalist>
+
+      <!-- <input type="text" name="test" required /> -->
+      <input type="submit" />
+    </form>
+    <form action="" method="get">
+      <textarea name="" id="" cols="10" rows="10"></textarea>
+
+      <fieldset>
+        <legend>개인정보</legend>
+        <label for="myName">이름</label>
+        <input type="text" name="name" id="myName" />
+        <label for="myTel">전화번호</label>
+        <input type="tel" name="tel" id="myTel" />
+        <label for="myEmail">이메일</label>
+        <input type="email" name="email" id="myEmail" />
+      </fieldset>
+      <fieldset>
+        <legend>개인정보 제공 동의</legend>
+        <label for="checkAgree">개인정보 제공에 동의하십니까?</label>
+        <input type="checkbox" name="agree" id="checkAgree" />
+      </fieldset>
+      <!-- 버튼에 타입 써주기 기본값: submit -->
+      <button type="submit">버튼입니다</button>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
