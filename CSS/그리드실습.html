@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <style>
+      .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      .item:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 1 / span 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item"><img src="image/1.jpg" alt="" /></div>
+      <div class="item"><img src="image/2.jpg" alt="" /></div>
+      <div class="item"><img src="image/3.webp" alt="" /></div>
+      <div class="item"><img src="image/4.jpg" alt="" /></div>
+      <div class="item"><img src="image/5.webp" alt="" /></div>
+      <div class="item"><img src="image/6.jpg" alt="" /></div>
+    </div>
+  </body>
+</html>
