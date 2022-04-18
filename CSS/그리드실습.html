@@ -4,25 +4,87 @@
     <style>
       .container {
         display: grid;
-        height: 100vh;
+        height: 700px;
+        width: 700px;
         grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 10px;
       }
 
-      .item:nth-child(1) {
+      .item1 {
+        background-image: url(image/1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      .item2 {
+        background-image: url(image/2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-row-start: 3;
+        grid-row-end: 4;
         grid-column-start: 1;
         grid-column-end: 3;
-        grid-row: 1 / span 1;
+      }
+
+      .item3 {
+        background-image: url(image/3.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      .item4 {
+        background-image: url(image/4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        grid-column-start: 3;
+        grid-column-end: 6;
+      }
+
+      .item5 {
+        background-image: url(image/5.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+      .item6 {
+        background-image: url(image/6.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 6;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="item"><img src="image/1.jpg" alt="" /></div>
-      <div class="item"><img src="image/2.jpg" alt="" /></div>
-      <div class="item"><img src="image/3.webp" alt="" /></div>
-      <div class="item"><img src="image/4.jpg" alt="" /></div>
-      <div class="item"><img src="image/5.webp" alt="" /></div>
-      <div class="item"><img src="image/6.jpg" alt="" /></div>
+      <div class="item1"></div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4"></div>
+      <div class="item5"></div>
+      <div class="item6"></div>
     </div>
   </body>
 </html>
