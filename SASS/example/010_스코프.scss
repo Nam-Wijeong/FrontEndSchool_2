@@ -1,0 +1,8 @@
+.one {
+  $value: red;
+  color: $value;
+  //@at-root 로 밖으로 빼주는 것도 가능
+  .two {
+    color: $value;
+  }
+}

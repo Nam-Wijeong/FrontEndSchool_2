@@ -1,0 +1,10 @@
+// 전역변수로 사용할 때에는 밖에서 선언해주기~!
+
+.one {
+  $value: red; //지역변수, 지역에서만 사용 가능!
+  color: $value;
+}
+
+.two {
+  color: $value;
+}

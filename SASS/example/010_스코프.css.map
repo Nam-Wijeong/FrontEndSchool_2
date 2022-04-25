@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EAEH,KAAK,EADG,GAAG;CAMZ;;AAPD,AAIE,IAJE,CAIF,IAAI,CAAC;EACH,KAAK,EAJC,GAAG;CAKV",
+    "sources": [
+        "010_스코프.scss"
+    ],
+    "names": [],
+    "file": "010_스코프.css"
+}
