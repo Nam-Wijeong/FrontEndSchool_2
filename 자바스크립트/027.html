@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <article class="parent">
+      <ol>
+        <li><button class="btn-first" type="button">버튼1</button></li>
+        <li><button type="button">버튼2</button></li>
+        <li><button type="button">버튼3</button></li>
+      </ol>
+    </article>
+    <script>
+      const btnFirst = document.querySelector('.btn-first');
+      btnFirst.addEventListener('click', (event) => {
+        console.log(event);
+      });
+      // 이벤트 발생을 찾을때까지 돔트리를 따라 쭉 내려간다.
+      // 캡쳐링 이벤트가 있으면 다 실행. 캡쳐링 이벤트는 이벤트 리스너가 트루인거
+      // 그 이벤트리스너는 캡처링 단계에서 실행된다@
+    </script>
+  </body>
+</html>
