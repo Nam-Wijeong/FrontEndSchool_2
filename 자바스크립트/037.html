@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   function NewFactory2(name) {
+      //     this.name = name;
+      //   }
+
+      //   NewFactory2.prototype.sayYourName = function () {
+      //     console.log(`삐리비리. 제 이름은 ${this.name}입니다. 주인님`);
+      //   };
+
+      const foods = [
+        '짜장면',
+        '치킨',
+        '곱창',
+        '닭발',
+        '족발',
+        '피자',
+        '광안리초필살껍데기',
+      ];
+
+      function FoodBot(foodNames) {
+        this.menu = foodNames;
+        FoodBot.prototype.sayMenu = function () {
+          console.log(
+            `제가 다시 먹고 싶은 음식은,,,${
+              this.menu[Math.floor(Math.random() * this.menu.length)]
+            } 입니다`
+          );
+        };
+      }
+
+      //   FoodBot.prototype.sayMenu = function () {
+      //     console.log(
+      //       `제가 다시 먹고 싶은 음식은,,,${
+      //         this.menu[Math.floor(Math.random() * this.menu.length)]
+      //       } 입니다`
+      //     );
+      //   };
+    </script>
+  </body>
+</html>
