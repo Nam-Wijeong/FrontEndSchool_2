@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   class Robot {
+      //     constructor(name) {
+      //       this.name = name;
+      //     }
+
+      //     sayYourName() {
+      //       console.log(`삐리비리. 제 이름은 ${this.name}입니다. 주인님.`);
+      //     }
+      //   }
+
+      //   class BabyRobot extends Robot {
+      //     constructor(name) {
+      //       super(name);
+      //       this.ownName = '아이쿠';
+      //     }
+
+      //     sayBabyName() {
+      //       this.sayYourName();
+      //       console.log('Suceeding you, Father!');
+      //     }
+      //   }
+
+      //   const baby = new BabyRobot('재현');
+
+      class Sausages {
+        constructor(ingredient1, ingredient2) {
+          this.ingredient1 = ingredient1;
+          this.ingredient2 = ingredient2;
+        }
+
+        taste() {
+          console.log(
+            `이 소세지는 ${this.ingredient1}와 ${this.ingredient2} 맛이 난댜~~!`
+          );
+        }
+      }
+      const mySausage = new Sausages('소고기', '파');
+
+      class FireSausage extends Sausages {
+        // constructor(ingredient1, ingredient2) {
+        //   super(ingredient1, ingredient2);
+        //   this.ownTaste = '불';
+        // }
+
+        taste() {
+          console.log(
+            `이 소세지는 ${this.ingredient1}와 ${this.ingredient2} 맛이 난댜~~! 어 불맛도 나네 꺆`
+          );
+        }
+      }
+
+      const fireSausage = new FireSausage('닭고기', '양파');
+    </script>
+  </body>
+</html>
