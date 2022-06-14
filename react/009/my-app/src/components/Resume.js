@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 function Resume(props) {
   let [like, setLike] = useState(0)
+  
   function clickLike() {
     setLike(like + 1)  
   }
