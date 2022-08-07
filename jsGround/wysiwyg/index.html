@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e3c06b9c00.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <article id="app">
+      <ul class="options">
+        <li>
+          <button type="button" data-command="h1">H1</button>
+        </li>
+        <li>
+          <button type="button" data-command="h2">H2</button>
+        </li>
+        <li>
+          <button type="button" data-command="h3">H3</button>
+        </li>
+        <li>
+          <button type="button" data-command="p">P</button>
+        </li>
+        <li>
+          <button type="button" data-command="bold">
+            <i class="fa-solid fa-bold"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-command="italic">
+            <i class="fa-solid fa-italic"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-command="underline">
+            <i class="fa-solid fa-underline"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-command="strikeThrough">
+            <i class="fa-solid fa-strikethrough"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-command="justifyLeft">
+            <i class="fa-solid fa-align-left"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-command="justifyCenter">
+            <i class="fa-solid fa-align-center"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-command="justifyRight">
+            <i class="fa-solid fa-align-right"></i>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-command="justifyFull">
+            <i class="fa-solid fa-align-justify"></i>
+          </button>
+        </li>
+      </ul>
+      <div class="editor" contenteditable="true">
+        <h1>나만의 wygiwyg 에디터</h1>
+        <p>Hello world~!</p>
+      </div>
+    </article>
+    <script>
+      document.querySelectorAll('.options button').forEach((item) =>
+        item.addEventListener('click', () => {
+          const command = item.dataset.command;
+          if (
+            command === 'h1' ||
+            command === 'h2' ||
+            command === 'h3' ||
+            command === 'p'
+          ) {
+            // 문서 편집이 가능한 영역에 명령을 내리는 함수('실행할 명령', boolean(두번째 기본UI제공여부를 묻는 매개변수는 불리언 값으로 준다. 다만 IE 기준이기 때문에 false를 준다), 명령에 필요한 변수)
+            document.execCommand('formatBlock', false, command);
+          } else {
+            document.execCommand(command);
+          }
+        })
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+#app {
+  overflow: hidden;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+}
+
+.editor {
+  min-height: 150px;
+  padding: 10px;
+  outline: none;
+}
+
+.options {
+  display: flex;
+  list-style: none;
+  padding: 8px;
+  margin: 0;
+  border-bottom: 1px solid lightgrey;
+  background-color: #bbdefb;
+}
+
+.options li:nth-child(4n) {
+  margin-right: 8px;
+}
+
+.options li button {
+  background-color: #82b1ff;
+  color: whitesmoke;
+  width: 30px;
+  padding: 4px;
+  border-radius: 3px;
+  border: 1px solid #4d82cb;
+}
+
+.options li button:focus {
+  background-color: #4d82cb;
+  border-color: #4d82cb;
+}

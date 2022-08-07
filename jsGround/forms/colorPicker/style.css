@@ -1,0 +1,30 @@
+:root {
+  --main-bgColor: lightsalmon;
+  --main-txtColor: white;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1.5em;
+  background-color: var(--main-bgColor);
+}
+
+.wrapper {
+  padding: 20px;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.picker {
+  display: inline-block;
+}
+
+.picker + .picker {
+  margin-left: 30px;
+}
+
+main {
+  color: var(--main-txtColor);
+  padding: 20px;
+}

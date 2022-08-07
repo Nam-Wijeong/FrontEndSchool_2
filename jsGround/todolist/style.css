@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+.artcl_main {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.artcl_main input {
+  flex-grow: 1;
+  font-size: 1.2em;
+  padding: 8px;
+  outline: none;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.artcl_main button {
+  flex-shrink: 0;
+  font-size: 1.2em;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+.list_todo {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  background-color: lightsteelblue;
+  border-radius: 5px;
+}
+
+.list_todo li {
+  padding: 5px 15px;
+  color: #222;
+  background-color: whitesmoke;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.3);
+}
+
+.list_todo li + li {
+  margin-top: 20px;
+}
+
+.list_todo li button {
+  float: right;
+  padding: 10px;
+  vertical-align: top;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  color: lightslategrey;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.list_todo li button:hover {
+  color: tomato;
+}
+
+.btn {
+  display: none;
+  font-size: 1em;
+  width: 200px;
+  float: right;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: lightslategrey;
+  color: whitesmoke;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: tomato;
+}
+
+.done {
+  text-decoration: line-through;
+}
